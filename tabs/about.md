@@ -8,4 +8,4 @@ title: About
 # MIT License
 ---
 
-> **Note**: Add Markdown syntax content to file `tabs/about.md` and it will show up on this page.
+> **Note**: If you have any questions, please send an e-mail to hws0120@khu.ac.kr.
