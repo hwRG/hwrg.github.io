@@ -10,7 +10,7 @@
 
 title: HW Space                          # the main title
 
-tagline: KyungHee University\nDepartment of Software Convergence\nDataScience Track  # it will display as the sub-title
+tagline: KyungHee University Department of Software Convergence [Data Science Track]  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Interested in speech synthesis technology based on deep learning.
