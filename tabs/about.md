@@ -8,4 +8,4 @@ title: About
 # MIT License
 ---
 
-> **Note**: If you have any questions, please send an e-mail to hws0120@khu.ac.kr.
+> **Note**: If you have any questions, please send an e-mail to **hws0120@khu.ac.kr**
