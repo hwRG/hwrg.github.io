@@ -3,7 +3,7 @@ title: Tacotron과 Wavenet 음성 합성 Training 결과 리뷰
 author: HW
 date: 2020-09-27 17:00:00 +0800
 categories: [Speech Synthesis]
-tags: [Tacotron] [Wavenet]
+tags: [Training]
 math: true
 image: /assets/img/sample/
 ---
