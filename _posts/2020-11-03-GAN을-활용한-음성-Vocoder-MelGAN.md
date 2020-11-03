@@ -1,5 +1,5 @@
 ---
-title: GAN을 활용한 음성 Vocoder - MelGAN
+title: Generative Adversarial Network 을 활용한 Vocoder MelGAN
 author: HW
 date: 2020-11-03 17:00:00 +0800
 categories: [Speech Synthesis]
