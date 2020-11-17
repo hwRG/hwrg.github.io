@@ -5,7 +5,7 @@ date: 2020-09-20 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [Wavenet]
 math: true
-image: /assets/img/insert/wavenet/main.jpg
+image: /assets/img/insert/wavenet/main.png
 ---
 
 
