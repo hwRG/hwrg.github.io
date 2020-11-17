@@ -32,7 +32,7 @@ https://deepmind.com/blog/article/wavenet-generative-model-raw-audio
 
 ![exTTS](/assets/img/insert/wavenet/residual.png)
 
-![exTTS](/assets/img/insert/wavenet/casual_conv_layer.png)
+![exTTS](/assets/img/insert/wavenet/casual_layer.png)
 
 이 모델은 실제 음성 파형을 input으로 대입해 convolution 연산을 하는 layer을 구성하여 만든 모델이다.
 
