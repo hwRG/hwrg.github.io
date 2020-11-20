@@ -1,5 +1,5 @@
 ---
-title: Tacotron과 Wavenet 음성 합성 Training 결과 리뷰
+title: Tacotron과 Wavenet 오픈소스 음성 합성 Training 결과 리뷰
 author: HW
 date: 2020-09-27 17:00:00 +0800
 categories: [Speech Synthesis]

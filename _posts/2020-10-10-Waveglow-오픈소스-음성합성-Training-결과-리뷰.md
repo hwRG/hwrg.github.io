@@ -1,11 +1,11 @@
 ---
-title: Waveglow 음성합성 Vocoder Training 결과 리뷰
+title: Waveglow 오픈소스 음성합성 Vocoder Training 결과 리뷰
 author: HW
 date: 2020-10-10 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [Waveglow]
 math: true
-image: /assets/img/sample/tacotron_model.jpg
+image: /assets/img/insert/waveglow/waveglow_icon.jpg
 
 ---
 
@@ -23,37 +23,37 @@ image: /assets/img/sample/tacotron_model.jpg
 
 결과에 대해 리뷰하고 한 번 확인해보자.
 
+<br/><br/>
 
-
-# 첫 번째 본론
-
-
-
-
-
-# 두 번째 본론
+# 코드 요약
 
 
 
 
 
-# 셋
+# 실행 과정
 
 
 
 
 
-# 넷
+# 실행 결과
 
 
 
 
 
-# 다섯
+# 결과물 확인
 
 
 
 
 
-# 마지막?
+# 총평
+
+
+
+
+
+
 

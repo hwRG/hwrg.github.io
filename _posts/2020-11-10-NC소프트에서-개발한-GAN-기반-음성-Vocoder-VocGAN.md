@@ -1,11 +1,11 @@
 ---
-title: GAN(적대적 생성 모델)을 활용한 Vocoder MelGAN
+title: NC소프트에서 개발한 GAN기반 음성 Vocodor VocGAN
 author: HW
-date: 2020-11-03 17:00:00 +0800
+date: 2020-11-10 17:00:00 +0800
 categories: [Speech Synthesis]
-tags: [MelGAN]
+tags: [VocGAN]
 math: true
-image: /assets/img/insert/melgan/melgan_performance.png
+image: /assets/img/insert/vocgan/vocgan_performance.png
 
 ---
 

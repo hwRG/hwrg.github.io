@@ -5,7 +5,7 @@ date: 2020-10-03 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [Waveglow]
 math: true
-image: /assets/img/sample/
+image: /assets/img/insert/waveglow/waveglow_icon.png
 
 ---
 
