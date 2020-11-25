@@ -1,5 +1,5 @@
 ---
-title: GAN(적대적 생성 모델)을 활용한 Vocoder MelGAN
+title: GAN(적대적 생성 모델)을 활용한 Vocoder - MelGAN
 author: HW
 date: 2020-10-20 17:00:00 +0800
 categories: [Speech Synthesis]
