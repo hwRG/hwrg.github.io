@@ -27,5 +27,5 @@ image: /assets/img/insert/parallel_tacotron/model_architecture.png
 
 
 
-## 논문 스터디 중
+## 논문 스터디 중입니다.
 
