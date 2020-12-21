@@ -1,7 +1,7 @@
 ---
 title: Waveglow 오픈소스 음성합성 Vocoder Training 결과 리뷰
 author: HW
-date: 2020-10-10 17:00:00 +0800
+date: 2020-10-28 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [Waveglow]
 math: true

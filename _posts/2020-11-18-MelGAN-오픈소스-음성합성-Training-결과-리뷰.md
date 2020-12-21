@@ -1,7 +1,7 @@
 ---
 title: MelGAN 오픈소스 음성합성 Training 결과 리뷰
 author: HW
-date: 2020-11-03 17:00:00 +0800
+date: 2020-11-18 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [MelGAN]
 math: true

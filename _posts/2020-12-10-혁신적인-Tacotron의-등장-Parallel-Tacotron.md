@@ -1,7 +1,7 @@
 ---
 title: 혁신적인 Tacotron의 등장 - Parallel Tacotron
 author: HW
-date: 2020-11-24 17:00:00 +0800
+date: 2020-12-10 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [Parallel Tacotron]
 math: true
@@ -25,35 +25,7 @@ image: /assets/img/insert/parallel_tacotron/model_architecture.png
 
 
 
-# 요약
 
 
-
-
-
-# 본문
-
-
-
-
-
-# 결론
-
-
-
-
-
-# 넷
-
-
-
-
-
-# 다섯
-
-
-
-
-
-# 마지막?
+## 논문 스터디 중
 

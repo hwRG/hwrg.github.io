@@ -1,7 +1,7 @@
 ---
 title: Nvidia의 새로운 Vocoder - Waveglow
 author: HW
-date: 2020-10-03 17:00:00 +0800
+date: 2020-10-14 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [Waveglow]
 math: true

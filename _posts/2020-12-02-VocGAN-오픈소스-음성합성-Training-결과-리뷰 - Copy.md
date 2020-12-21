@@ -1,7 +1,7 @@
 ---
 title: VocGAN 오픈소스 음성합성 Training 결과 리뷰
 author: HW
-date: 2020-11-17 17:00:00 +0800
+date: 2020-12-02 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [VocGAN]
 math: true

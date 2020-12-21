@@ -1,7 +1,7 @@
 ---
 title: 딥러닝 기반의 음성합성 Vocoder - Wavenet
 author: HW
-date: 2020-09-20 17:00:00 +0800
+date: 2020-09-27 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [Wavenet]
 math: true

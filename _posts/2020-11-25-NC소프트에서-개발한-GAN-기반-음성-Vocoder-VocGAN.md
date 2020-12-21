@@ -1,7 +1,7 @@
 ---
 title: NC소프트에서 개발한 GAN기반 음성 Vocoder - VocGAN
 author: HW
-date: 2020-11-10 17:00:00 +0800
+date: 2020-11-25 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [VocGAN]
 math: true

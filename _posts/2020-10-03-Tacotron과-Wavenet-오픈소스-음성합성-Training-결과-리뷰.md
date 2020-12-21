@@ -1,7 +1,7 @@
 ---
 title: Tacotron과 Wavenet 오픈소스 음성 합성 Training 결과 리뷰
 author: HW
-date: 2020-09-27 17:00:00 +0800
+date: 2020-10-03 17:00:00 +0800
 categories: [Speech Synthesis]
 tags: [Training]
 math: true
@@ -22,9 +22,9 @@ Training은 데스크탑에 있는 RTX2060 Super을 사용했고, Training 시�
 
 
 
-# 첫 번째 본론
+# 트레이닝 환경 세팅
 
-
+리눅스를 사용하긴 하나, 비중이 굉장히 낮아서 처음 트레이닝을 할 때 윈도우로 CUDA와 CUDNN을 참고하여 
 
 
 
