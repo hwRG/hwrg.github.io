@@ -25,7 +25,7 @@ image: /assets/img/insert/waveglow/waveglow_icon.jpg
 
 <br/><br/>
 
-# 코드 요약
+# 코드 요약 및 핵심
 
 
 

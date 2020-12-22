@@ -19,7 +19,7 @@ image: /assets/img/insert/melgan/melgan_performance.png
 
 지금까지와 다른 알고리즘을 사용한 Vocoder인 MelGAN은 어떤 결과물이 나올지 직접 한 번 보도록 하겠다.<br/><br/>
 
-# 코드 요약
+# 코드 요약 및 핵심
 
 
 
