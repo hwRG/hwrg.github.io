@@ -133,9 +133,17 @@ layout: default
 
     {% include post-nav.html %}
 
-    {% if site.disqus.comments and page.comments %}
+    <!--{% if site.disqus.comments and page.comments %}
       {% include disqus.html %}
-    {% endif %}
+    {% endif %}-->
+    <script src="https://utteranc.es/client.js"
+        repo="hwRG/hwrg.github.io"
+        issue-term="pathname"
+        label="comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
 
     </div> <!-- #post-extend-wrapper -->
 
