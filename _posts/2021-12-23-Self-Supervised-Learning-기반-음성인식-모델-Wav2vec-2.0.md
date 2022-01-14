@@ -12,7 +12,7 @@ image: /assets/img/wav2vec2.0/main.png
 ## **Research Purpose**
 
 - Unlabeled speech data와 적은 Labeled speech data로 충분히 음성인식기를 <br>
-   개발하기 위해 **Self-supervised Learning 알고리즘 활용<br>
+   개발하기 위해 **Self-supervised Learning** 알고리즘 활용<br>
 
 - 자연어 처리에서 Transformer로 비약적인 발전을 이룬 것처럼<br>
    음성 인식 분야에서도 Transformer로 뛰어난 발전을 이루기 위해 제안<br><br>
