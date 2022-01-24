@@ -1,11 +1,10 @@
 ---
-title: Transfer Learning으로 소량의 데이터로 합성이 가능한 TTS 모델 
+title: Transfer Learning 소량의 데이터로 합성이 가능한 TTS 모델 
 author: HW
 date: 2022-01-24 16:33:47 +0800
 categories: [Speech Synthesis]
 tags: [Transfer Learning]
 math: true
-image: /assets/img/adpat/figure1.png
 ---
 
  본 포스팅은 [Adapting TTS Models For New Speakers Using Transfer Learning] 논문에 대한 이해를 목적으로 작성되었습니다.
@@ -39,7 +38,7 @@ image: /assets/img/adpat/figure1.png
 
 ### **Methodology**
 
-**Spectrogram Synthesizer** 
+##### **Spectrogram Synthesizer** 
 
 - **FastPitch**를 선택했다. **FastPitch**는 **2개의 feed forward transformer(FFTr)** 스택으로 구성되어 있으며, 첫 번째 스택의 input은 phonemes token이다. Output은 hidden representation으로, 이는 모든 token의 duration과 평균 pitch를 예측하는데 활용된다. (각각 생성)
 
@@ -56,25 +55,25 @@ image: /assets/img/adpat/figure1.png
 - 학습할 때 end to end로 텍스트와 음성을 묶어내고, mel-spec y와 pitch p는 data-loading 파이프라인에서 계산된다.
    그리고 추론할 때 텍스트를 바로 음성으로 생성하기 위해 p와 d를 예측한다. 
 
-  <br>
+  
 
-**Vocoder**
+##### **Vocoder**
 
 - HiFi-GAN을 사용하는데, 이는 mel-spec to audio 과정을 더 업샘플링할 수 있도록 conv 구조를 변환한 generator 네트워크로 구성되어 있다.
 
 - HiFi-GAN은 unseen speaker에 대한 mel-spec을 변환할 수 있다는 이점을 갖고 있으며, 실제로 HiFi-GAN으로 unseen data에 finetune했을 때 음성 품질이 향상된 것을 확인했다.
 
-  <br><br>
+  <br>
 
 ### **Experiment**
 
-**Dataset**
+##### **Dataset**
 
 - Hi-Fi TTS 데이터셋(292시간, 10명이 최소 17시간, 44.1kHz)을 사용했으며, 8051 여자의 single speaker로 학습하고, finetuning은 6097 남자 데이터와 92 여자 데이터를 사용했다.
 
 - 각 3명의 데이터는 최소 27시간을 넘으며, 텍스트와 음성과 묶어서 50개를 valid sample로 보관한다.
 
-**Train setting**
+##### **Train setting**
 
 - 92와 6097의 데이터를 1, 5, 30, 60분으로 나눈 subset을 두어 각각 적용했다. 
    Mixed finetuning을 위해 8051의 음성 데이터를 5000개 샘플(5시간)과 혼합한다.
@@ -84,19 +83,19 @@ image: /assets/img/adpat/figure1.png
 - 직접 finetuning method를 할 때는 적은 iteration으로 overfitting을 막는다.
    한 개의 V100 GPU로 5분의 데이터로 직접 finetuning을 진행하면 1시간보다 적게 걸린다.
 
- <br><br>
+ <br>
 
 ### **Finetuning Method**
 
 - Mel-spectrogram만 생성하는 finetuning을 진행했을 때, pre-trained multi speaker에서 HiFiGAN을 사용하여 unseen speaker의 실제 mel-spectrogram을 변환했을 때 품질이 저하되는 것을 확인했다. 그래서 Finetuning 방법을 2가지로 나누어 진행했다.
 
-- **Direct Finetuning**
+   **Direct Finetuning**
 
 - Pretrained TTS 모델 전체에 직접적으로 파라미터에 finetuning을 진행하는 방식이다.
    spectrogram 생성 모델은 speaker의 텍스트와 음성을 묶고, vocoder 모델에선 음성 샘플만 두어 spectrogram과 waveform을 묶는다. 미니배치와 adam, fixed learning rate를 사용한다.
 
-- **Mixed Finetuning**
-
+   **Mixed Finetuning**
+   
 - Direct는 새로운 speaker의 학습 데이터에 의해 overfitting과 forgetting이 발생할 수 있다.
    이를 해결하기 위해 기존 speaker 데이터와 새로운 speaker 데이터를 finetuning 중 섞는 transfer learning method를 고안해냈다. 이를 위해 data-loading 파이프라인에서 샘플에서 기존, 새로운 speaker의 샘플 수를 미니 배치마다 일치시키도록 구성했다.
 
@@ -108,7 +107,7 @@ image: /assets/img/adpat/figure1.png
 
 - 그럼 간단히 두 speaker의 spectrogram과 waveform만 묶어주면 된다. 마찬가지로 finetuning 중에 두 speaker에 대한 balanced data와 함께 미니배치를 사용한다.
 
-<br><br>
+<br>
 
 ### **Three Aspects**<br>
 
@@ -117,7 +116,7 @@ image: /assets/img/adpat/figure1.png
 
 #### **Naturalness**
 - 전통적으로 음성 합성 결과를 위해 사용한 MOS를 통해 성능을 분석한다.
-  <br>
+  
 
 #### **Voice Similarity**
 - Verification을 평가하기 위해 pre-trained speaker verification (SpeakerNet)을 사용했다. <br>
@@ -126,7 +125,7 @@ image: /assets/img/adpat/figure1.png
 ![figure1](/assets/img/adpat/figure1.png)<br>
 
 - 기본적으로 Equal Error Rate를 사용하여 평가를 진행하며, 위 t-SNE 그래프를 보면 5분마다 Direct와 Mixed Finetuning으로 합성된 모델이 비슷하게 분포해 있음을 확인할 수 있다. 
-  <br>
+  
 
 #### **Style similarity**
 
