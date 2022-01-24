@@ -1,5 +1,5 @@
 ---
-title: [논문 리뷰] Transfer Learning으로 소량의 데이터로 합성이 가능한 TTS 모델 (Adapting TTS Models For New Speakers Using Transfer Learning)
+title: Transfer Learning으로 소량의 데이터로 합성이 가능한 TTS 모델 (Adapting TTS Models For New Speakers Using Transfer Learning)
 author: HW
 date: 2022-01-24 16:33:47 +0800
 categories: [Speech Synthesis]
