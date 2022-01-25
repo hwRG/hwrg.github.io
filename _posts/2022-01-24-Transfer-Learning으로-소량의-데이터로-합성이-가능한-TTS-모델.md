@@ -1,5 +1,5 @@
 ---
-title: Transfer Learning 소량의 데이터로 합성이 가능한 TTS 모델 
+title: 소량의 데이터로 음성을 합성하는 Transfer Learning 활용 TTS 모델 
 author: HW
 date: 2022-01-24 16:33:47 +0800
 categories: [Speech Synthesis]
@@ -7,7 +7,9 @@ tags: [Transfer Learning]
 math: true
 ---
 
- 본 포스팅은 [Adapting TTS Models For New Speakers Using Transfer Learning] 논문에 대한 이해를 목적으로 작성되었습니다.
+
+
+본 포스팅은 [Adapting TTS Models For New Speakers Using Transfer Learning] 논문에 대한 이해를 목적으로 작성
 
 ### **Abstract**
 
@@ -22,7 +24,7 @@ math: true
 
 - 30분의 데이터로 27시간이 넘는 데이터로 학습한 각각 남녀의 데이터와 비슷한 수준의 결과를 확인할 수 있다. 
 
-  <br><br>
+  <br>
 
 ### **Background and Related work**
 
@@ -34,7 +36,7 @@ math: true
 
 - 학습은 end-to-end로 이루어져 있으며, 데이터셋은 labeled TTS 데이터를 사용했다.
 
-  <br><br>
+  <br>
 
 ### **Methodology**
 
