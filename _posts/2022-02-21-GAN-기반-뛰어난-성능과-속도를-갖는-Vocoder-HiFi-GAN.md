@@ -7,6 +7,8 @@ tags: [Vocoder]
 math: true
 ---
 
+
+
 ## **Abstract**
 
 - **HiFi-GAN**은 오디오가 sin파로 이루어진 점을 고려하여 **주기적인 패턴을 모델링 하는 것에 집중하여** 품질을 향상시켰다.
