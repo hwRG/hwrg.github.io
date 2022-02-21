@@ -42,7 +42,7 @@ math: true
   Generator에 사용한 MRF는 다양한 길이의 패턴을 병렬적으로 관찰하도록 모듈을 구성했다.<br>
   여러 개의 residual block에서 각각 kernel size와 dilation rate를 조절하여 다양한 receptive field를 형성한다. 그리고 여기서 나온 output을 return 하는 구조를 가진다.
 
-- 위 그림에서 보다시피 $k_u, h_u, k_r, D_r$등 파라미터를 조절하여 합성 효율과 퀄리티 사이에 균형을 임의로 변경하여 조절할 수 있다.
+- 위 그림에서 보다시피 $$k_{u}, h_{u}, k_{r}, D_{r}$$등 파라미터를 조절하여 합성 효율과 퀄리티 사이에 균형을 임의로 변경하여 조절할 수 있다.
 
 ### **Discriminator**
 
@@ -95,8 +95,8 @@ math: true
 - GPU와 CPU 환경 모두에서 측정하기 위해 GPU는 V100 1개를 사용했고, CPU는 인텔 모바일 i7으로 수행했다.
 
 - **Version** – 3가지 버전으로 실험을 진행했다. 
-   V1은 $h_u=512, k_u=[16,16,4,4], k_r=[3,7,11], D_r=[[1,1],[3,1],[5,1]*3]$이다. 
-   V2는 V1의 hidden dim만 ¼한 $h_u=128$이고 그 외에는 V1과 동일하다.
+   V1은 $$h_{u}=512, k_{u}=[16,16,4,4], k_{r}=[3,7,11], D_{r}=[[1,1],[3,1],[5,1]*3]$$이다. 
+   V2는 V1의 hidden dim만 ¼한 $$h_{u}=128$$이고 그 외에는 V1과 동일하다.
    V3는 receptive field를 넓히면서 layer 수를 줄이고자 kernel size와 dilation rate를 선택했다.
 
 <br>
