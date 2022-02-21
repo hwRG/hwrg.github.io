@@ -1,5 +1,5 @@
 ---
-title: 소량의 데이터로 음성을 합성하는 Transfer Learning 활용 TTS 모델 
+title: 뛰어난 성능과 속도를 갖는 GAN 기반 Vocoder - HiFi-GAN
 author: HW
 date: 2022-02-21 11:18:03 +0800
 categories: [Speech Synthesis]
