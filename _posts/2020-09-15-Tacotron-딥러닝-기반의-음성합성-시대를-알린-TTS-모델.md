@@ -1,5 +1,5 @@
 ---
-title: 딥러닝 기반의 음성합성 모델 - Tacotron
+title: Tacotron - 딥러닝 기반의 음성합성 시대를 알린 TTS 모델
 author: HW
 date: 2020-09-15 17:00:00 +0800
 categories: [Speech Synthesis]

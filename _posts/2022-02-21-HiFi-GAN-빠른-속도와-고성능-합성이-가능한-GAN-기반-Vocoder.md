@@ -1,5 +1,5 @@
 ---
-title: 뛰어난 성능과 속도를 갖는 GAN 기반 Vocoder - HiFi-GAN
+title: HiFi-GAN - 빠른 속도와 고성능 합성이 가능한 GAN 기반 Vocoder
 author: HW
 date: 2022-02-21 11:18:03 +0800
 categories: [Speech Synthesis]

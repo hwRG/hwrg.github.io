@@ -1,5 +1,5 @@
 ---
-title: 푸리에 변환의 이해 - Fourier Transform 
+title: Fourier Transform - 푸리에 변환의 이해
 author: HW
 date: 2021-12-06 22:18:00 +0800
 categories: [Signal Processing]
